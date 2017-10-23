@@ -82,6 +82,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.gitHubLink = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.sellUnitsButton = new System.Windows.Forms.Button();
+            this.fuseUnitsButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.injectionTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.injectDataGrid)).BeginInit();
@@ -90,6 +96,7 @@
             this.levelingTab.SuspendLayout();
             this.sellTab.SuspendLayout();
             this.jpSummonTab.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -100,10 +107,12 @@
             this.tabControl1.Controls.Add(this.levelingTab);
             this.tabControl1.Controls.Add(this.sellTab);
             this.tabControl1.Controls.Add(this.jpSummonTab);
-            this.tabControl1.Location = new System.Drawing.Point(13, 13);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(20, 20);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(789, 231);
+            this.tabControl1.Size = new System.Drawing.Size(1184, 355);
             this.tabControl1.TabIndex = 2;
             // 
             // injectionTab
@@ -111,10 +120,11 @@
             this.injectionTab.Controls.Add(this.injectDataGrid);
             this.injectionTab.Controls.Add(this.injectSearchInput);
             this.injectionTab.Controls.Add(this.injectButton);
-            this.injectionTab.Location = new System.Drawing.Point(4, 22);
+            this.injectionTab.Location = new System.Drawing.Point(4, 29);
+            this.injectionTab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.injectionTab.Name = "injectionTab";
-            this.injectionTab.Padding = new System.Windows.Forms.Padding(3);
-            this.injectionTab.Size = new System.Drawing.Size(781, 205);
+            this.injectionTab.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.injectionTab.Size = new System.Drawing.Size(1176, 322);
             this.injectionTab.TabIndex = 0;
             this.injectionTab.Text = "Injection";
             this.injectionTab.UseVisualStyleBackColor = true;
@@ -126,26 +136,29 @@
             this.injectDataGrid.AllowUserToResizeRows = false;
             this.injectDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.injectDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.injectDataGrid.Location = new System.Drawing.Point(3, 3);
+            this.injectDataGrid.Location = new System.Drawing.Point(4, 5);
+            this.injectDataGrid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.injectDataGrid.Name = "injectDataGrid";
             this.injectDataGrid.RowHeadersVisible = false;
-            this.injectDataGrid.Size = new System.Drawing.Size(772, 165);
+            this.injectDataGrid.Size = new System.Drawing.Size(1158, 254);
             this.injectDataGrid.TabIndex = 3;
             // 
             // injectSearchInput
             // 
-            this.injectSearchInput.Location = new System.Drawing.Point(3, 182);
+            this.injectSearchInput.Location = new System.Drawing.Point(4, 280);
+            this.injectSearchInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.injectSearchInput.Name = "injectSearchInput";
-            this.injectSearchInput.Size = new System.Drawing.Size(253, 20);
+            this.injectSearchInput.Size = new System.Drawing.Size(378, 26);
             this.injectSearchInput.TabIndex = 2;
             this.injectSearchInput.Text = "search";
             this.injectSearchInput.TextChanged += new System.EventHandler(this.InjectSearchInput_TextChanged);
             // 
             // injectButton
             // 
-            this.injectButton.Location = new System.Drawing.Point(698, 176);
+            this.injectButton.Location = new System.Drawing.Point(1047, 271);
+            this.injectButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.injectButton.Name = "injectButton";
-            this.injectButton.Size = new System.Drawing.Size(77, 23);
+            this.injectButton.Size = new System.Drawing.Size(116, 35);
             this.injectButton.TabIndex = 1;
             this.injectButton.Text = "inject";
             this.injectButton.UseVisualStyleBackColor = true;
@@ -159,10 +172,11 @@
             this.unitHunterTab.Controls.Add(this.label5);
             this.unitHunterTab.Controls.Add(this.unitSelect);
             this.unitHunterTab.Controls.Add(this.summonButton);
-            this.unitHunterTab.Location = new System.Drawing.Point(4, 22);
+            this.unitHunterTab.Location = new System.Drawing.Point(4, 29);
+            this.unitHunterTab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.unitHunterTab.Name = "unitHunterTab";
-            this.unitHunterTab.Padding = new System.Windows.Forms.Padding(3);
-            this.unitHunterTab.Size = new System.Drawing.Size(781, 205);
+            this.unitHunterTab.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.unitHunterTab.Size = new System.Drawing.Size(1176, 322);
             this.unitHunterTab.TabIndex = 1;
             this.unitHunterTab.Text = "Unit Hunter";
             this.unitHunterTab.UseVisualStyleBackColor = true;
@@ -170,9 +184,10 @@
             // sell4Star
             // 
             this.sell4Star.AutoSize = true;
-            this.sell4Star.Location = new System.Drawing.Point(56, 57);
+            this.sell4Star.Location = new System.Drawing.Point(84, 88);
+            this.sell4Star.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sell4Star.Name = "sell4Star";
-            this.sell4Star.Size = new System.Drawing.Size(56, 17);
+            this.sell4Star.Size = new System.Drawing.Size(80, 24);
             this.sell4Star.TabIndex = 7;
             this.sell4Star.Text = "Sell 4*";
             this.sell4Star.UseVisualStyleBackColor = true;
@@ -181,9 +196,10 @@
             // sell5Star
             // 
             this.sell5Star.AutoSize = true;
-            this.sell5Star.Location = new System.Drawing.Point(56, 80);
+            this.sell5Star.Location = new System.Drawing.Point(84, 123);
+            this.sell5Star.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sell5Star.Name = "sell5Star";
-            this.sell5Star.Size = new System.Drawing.Size(56, 17);
+            this.sell5Star.Size = new System.Drawing.Size(80, 24);
             this.sell5Star.TabIndex = 6;
             this.sell5Star.Text = "Sell 5*";
             this.sell5Star.UseVisualStyleBackColor = true;
@@ -192,9 +208,10 @@
             // sell3Star
             // 
             this.sell3Star.AutoSize = true;
-            this.sell3Star.Location = new System.Drawing.Point(56, 34);
+            this.sell3Star.Location = new System.Drawing.Point(84, 52);
+            this.sell3Star.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sell3Star.Name = "sell3Star";
-            this.sell3Star.Size = new System.Drawing.Size(56, 17);
+            this.sell3Star.Size = new System.Drawing.Size(80, 24);
             this.sell3Star.TabIndex = 5;
             this.sell3Star.Text = "Sell 3*";
             this.sell3Star.UseVisualStyleBackColor = true;
@@ -203,9 +220,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 9);
+            this.label5.Location = new System.Drawing.Point(30, 14);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 13);
+            this.label5.Size = new System.Drawing.Size(38, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Unit";
             // 
@@ -214,16 +232,18 @@
             this.unitSelect.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.unitSelect.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.unitSelect.FormattingEnabled = true;
-            this.unitSelect.Location = new System.Drawing.Point(56, 6);
+            this.unitSelect.Location = new System.Drawing.Point(84, 9);
+            this.unitSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.unitSelect.Name = "unitSelect";
-            this.unitSelect.Size = new System.Drawing.Size(169, 21);
+            this.unitSelect.Size = new System.Drawing.Size(252, 28);
             this.unitSelect.TabIndex = 3;
             // 
             // summonButton
             // 
-            this.summonButton.Location = new System.Drawing.Point(696, 176);
+            this.summonButton.Location = new System.Drawing.Point(1044, 271);
+            this.summonButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.summonButton.Name = "summonButton";
-            this.summonButton.Size = new System.Drawing.Size(79, 23);
+            this.summonButton.Size = new System.Drawing.Size(118, 35);
             this.summonButton.TabIndex = 2;
             this.summonButton.Text = "summon";
             this.summonButton.UseVisualStyleBackColor = true;
@@ -247,35 +267,39 @@
             this.missionsTab.Controls.Add(this.CBFriends);
             this.missionsTab.Controls.Add(this.MissionIdLabel);
             this.missionsTab.Controls.Add(this.missionSelect);
-            this.missionsTab.Location = new System.Drawing.Point(4, 22);
+            this.missionsTab.Location = new System.Drawing.Point(4, 29);
+            this.missionsTab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.missionsTab.Name = "missionsTab";
-            this.missionsTab.Size = new System.Drawing.Size(781, 205);
+            this.missionsTab.Size = new System.Drawing.Size(1176, 322);
             this.missionsTab.TabIndex = 4;
             this.missionsTab.Text = "Missions";
             this.missionsTab.UseVisualStyleBackColor = true;
             // 
             // RepeatMission
             // 
-            this.RepeatMission.Location = new System.Drawing.Point(219, 77);
+            this.RepeatMission.Location = new System.Drawing.Point(328, 118);
+            this.RepeatMission.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.RepeatMission.Name = "RepeatMission";
-            this.RepeatMission.Size = new System.Drawing.Size(100, 20);
+            this.RepeatMission.Size = new System.Drawing.Size(148, 26);
             this.RepeatMission.TabIndex = 16;
             // 
             // RepeatLabel
             // 
             this.RepeatLabel.AutoSize = true;
-            this.RepeatLabel.Location = new System.Drawing.Point(171, 80);
+            this.RepeatLabel.Location = new System.Drawing.Point(256, 123);
+            this.RepeatLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RepeatLabel.Name = "RepeatLabel";
-            this.RepeatLabel.Size = new System.Drawing.Size(42, 13);
+            this.RepeatLabel.Size = new System.Drawing.Size(62, 20);
             this.RepeatLabel.TabIndex = 15;
             this.RepeatLabel.Text = "Repeat";
             // 
             // RBAmazon
             // 
             this.RBAmazon.AutoSize = true;
-            this.RBAmazon.Location = new System.Drawing.Point(177, 103);
+            this.RBAmazon.Location = new System.Drawing.Point(266, 158);
+            this.RBAmazon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.RBAmazon.Name = "RBAmazon";
-            this.RBAmazon.Size = new System.Drawing.Size(63, 17);
+            this.RBAmazon.Size = new System.Drawing.Size(93, 24);
             this.RBAmazon.TabIndex = 14;
             this.RBAmazon.Text = "Amazon";
             this.RBAmazon.UseVisualStyleBackColor = true;
@@ -284,9 +308,10 @@
             // RBAndroid
             // 
             this.RBAndroid.AutoSize = true;
-            this.RBAndroid.Location = new System.Drawing.Point(114, 103);
+            this.RBAndroid.Location = new System.Drawing.Point(171, 158);
+            this.RBAndroid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.RBAndroid.Name = "RBAndroid";
-            this.RBAndroid.Size = new System.Drawing.Size(61, 17);
+            this.RBAndroid.Size = new System.Drawing.Size(89, 24);
             this.RBAndroid.TabIndex = 13;
             this.RBAndroid.Text = "Android";
             this.RBAndroid.UseVisualStyleBackColor = true;
@@ -296,9 +321,10 @@
             // 
             this.RBiOS.AutoSize = true;
             this.RBiOS.Checked = true;
-            this.RBiOS.Location = new System.Drawing.Point(65, 103);
+            this.RBiOS.Location = new System.Drawing.Point(98, 158);
+            this.RBiOS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.RBiOS.Name = "RBiOS";
-            this.RBiOS.Size = new System.Drawing.Size(42, 17);
+            this.RBiOS.Size = new System.Drawing.Size(60, 24);
             this.RBiOS.TabIndex = 12;
             this.RBiOS.TabStop = true;
             this.RBiOS.Text = "iOS";
@@ -307,26 +333,29 @@
             // 
             // LBLevel
             // 
-            this.LBLevel.Location = new System.Drawing.Point(65, 77);
+            this.LBLevel.Location = new System.Drawing.Point(98, 118);
+            this.LBLevel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.LBLevel.Name = "LBLevel";
-            this.LBLevel.Size = new System.Drawing.Size(100, 20);
+            this.LBLevel.Size = new System.Drawing.Size(148, 26);
             this.LBLevel.TabIndex = 11;
             // 
             // LBLabel
             // 
             this.LBLabel.AutoSize = true;
-            this.LBLabel.Location = new System.Drawing.Point(39, 80);
+            this.LBLabel.Location = new System.Drawing.Point(58, 123);
+            this.LBLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBLabel.Name = "LBLabel";
-            this.LBLabel.Size = new System.Drawing.Size(20, 13);
+            this.LBLabel.Size = new System.Drawing.Size(29, 20);
             this.LBLabel.TabIndex = 10;
             this.LBLabel.Text = "LB";
             // 
             // CBExplore
             // 
             this.CBExplore.AutoSize = true;
-            this.CBExplore.Location = new System.Drawing.Point(244, 57);
+            this.CBExplore.Location = new System.Drawing.Point(366, 88);
+            this.CBExplore.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CBExplore.Name = "CBExplore";
-            this.CBExplore.Size = new System.Drawing.Size(128, 17);
+            this.CBExplore.Size = new System.Drawing.Size(189, 24);
             this.CBExplore.TabIndex = 9;
             this.CBExplore.Text = "Exploration Treasures";
             this.CBExplore.UseVisualStyleBackColor = true;
@@ -334,9 +363,10 @@
             // CBUnits
             // 
             this.CBUnits.AutoSize = true;
-            this.CBUnits.Location = new System.Drawing.Point(153, 57);
+            this.CBUnits.Location = new System.Drawing.Point(230, 88);
+            this.CBUnits.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CBUnits.Name = "CBUnits";
-            this.CBUnits.Size = new System.Drawing.Size(85, 17);
+            this.CBUnits.Size = new System.Drawing.Size(124, 24);
             this.CBUnits.TabIndex = 8;
             this.CBUnits.Text = "Collect Units";
             this.CBUnits.UseVisualStyleBackColor = true;
@@ -344,9 +374,10 @@
             // CBLoot
             // 
             this.CBLoot.AutoSize = true;
-            this.CBLoot.Location = new System.Drawing.Point(65, 57);
+            this.CBLoot.Location = new System.Drawing.Point(98, 88);
+            this.CBLoot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CBLoot.Name = "CBLoot";
-            this.CBLoot.Size = new System.Drawing.Size(82, 17);
+            this.CBLoot.Size = new System.Drawing.Size(119, 24);
             this.CBLoot.TabIndex = 7;
             this.CBLoot.Text = "Collect Loot";
             this.CBLoot.UseVisualStyleBackColor = true;
@@ -355,9 +386,10 @@
             // 
             this.CBChallenge.AutoSize = true;
             this.CBChallenge.Enabled = false;
-            this.CBChallenge.Location = new System.Drawing.Point(273, 34);
+            this.CBChallenge.Location = new System.Drawing.Point(410, 52);
+            this.CBChallenge.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CBChallenge.Name = "CBChallenge";
-            this.CBChallenge.Size = new System.Drawing.Size(125, 17);
+            this.CBChallenge.Size = new System.Drawing.Size(186, 24);
             this.CBChallenge.TabIndex = 6;
             this.CBChallenge.Text = "Complete Challenges";
             this.CBChallenge.UseVisualStyleBackColor = true;
@@ -365,9 +397,10 @@
             // CBTrophies
             // 
             this.CBTrophies.AutoSize = true;
-            this.CBTrophies.Location = new System.Drawing.Point(153, 34);
+            this.CBTrophies.Location = new System.Drawing.Point(230, 52);
+            this.CBTrophies.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CBTrophies.Name = "CBTrophies";
-            this.CBTrophies.Size = new System.Drawing.Size(114, 17);
+            this.CBTrophies.Size = new System.Drawing.Size(168, 24);
             this.CBTrophies.TabIndex = 5;
             this.CBTrophies.Text = "Complete Trophies";
             this.CBTrophies.UseVisualStyleBackColor = true;
@@ -375,9 +408,10 @@
             // 
             // StartMission
             // 
-            this.StartMission.Location = new System.Drawing.Point(703, 179);
+            this.StartMission.Location = new System.Drawing.Point(1054, 275);
+            this.StartMission.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.StartMission.Name = "StartMission";
-            this.StartMission.Size = new System.Drawing.Size(75, 23);
+            this.StartMission.Size = new System.Drawing.Size(112, 35);
             this.StartMission.TabIndex = 4;
             this.StartMission.Text = "Start";
             this.StartMission.UseVisualStyleBackColor = true;
@@ -386,9 +420,10 @@
             // CBFriends
             // 
             this.CBFriends.AutoSize = true;
-            this.CBFriends.Location = new System.Drawing.Point(65, 34);
+            this.CBFriends.Location = new System.Drawing.Point(98, 52);
+            this.CBFriends.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CBFriends.Name = "CBFriends";
-            this.CBFriends.Size = new System.Drawing.Size(82, 17);
+            this.CBFriends.Size = new System.Drawing.Size(121, 24);
             this.CBFriends.TabIndex = 3;
             this.CBFriends.Text = "Use Friends";
             this.CBFriends.UseVisualStyleBackColor = true;
@@ -396,9 +431,10 @@
             // MissionIdLabel
             // 
             this.MissionIdLabel.AutoSize = true;
-            this.MissionIdLabel.Location = new System.Drawing.Point(3, 10);
+            this.MissionIdLabel.Location = new System.Drawing.Point(4, 15);
+            this.MissionIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MissionIdLabel.Name = "MissionIdLabel";
-            this.MissionIdLabel.Size = new System.Drawing.Size(56, 13);
+            this.MissionIdLabel.Size = new System.Drawing.Size(83, 20);
             this.MissionIdLabel.TabIndex = 2;
             this.MissionIdLabel.Text = "Mission ID";
             // 
@@ -407,9 +443,10 @@
             this.missionSelect.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.missionSelect.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.missionSelect.FormattingEnabled = true;
-            this.missionSelect.Location = new System.Drawing.Point(65, 7);
+            this.missionSelect.Location = new System.Drawing.Point(98, 11);
+            this.missionSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.missionSelect.Name = "missionSelect";
-            this.missionSelect.Size = new System.Drawing.Size(380, 21);
+            this.missionSelect.Size = new System.Drawing.Size(568, 28);
             this.missionSelect.TabIndex = 1;
             // 
             // levelingTab
@@ -418,18 +455,20 @@
             this.levelingTab.Controls.Add(this.rankUpButton);
             this.levelingTab.Controls.Add(this.levelStatus);
             this.levelingTab.Controls.Add(this.levelPartyButton);
-            this.levelingTab.Location = new System.Drawing.Point(4, 22);
+            this.levelingTab.Location = new System.Drawing.Point(4, 29);
+            this.levelingTab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.levelingTab.Name = "levelingTab";
-            this.levelingTab.Size = new System.Drawing.Size(781, 205);
+            this.levelingTab.Size = new System.Drawing.Size(1176, 322);
             this.levelingTab.TabIndex = 2;
             this.levelingTab.Text = "Leveling";
             this.levelingTab.UseVisualStyleBackColor = true;
             // 
             // arenaButton
             // 
-            this.arenaButton.Location = new System.Drawing.Point(335, 155);
+            this.arenaButton.Location = new System.Drawing.Point(502, 238);
+            this.arenaButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.arenaButton.Name = "arenaButton";
-            this.arenaButton.Size = new System.Drawing.Size(75, 23);
+            this.arenaButton.Size = new System.Drawing.Size(112, 35);
             this.arenaButton.TabIndex = 3;
             this.arenaButton.Text = "do arena";
             this.arenaButton.UseVisualStyleBackColor = true;
@@ -437,9 +476,10 @@
             // 
             // rankUpButton
             // 
-            this.rankUpButton.Location = new System.Drawing.Point(432, 155);
+            this.rankUpButton.Location = new System.Drawing.Point(648, 238);
+            this.rankUpButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rankUpButton.Name = "rankUpButton";
-            this.rankUpButton.Size = new System.Drawing.Size(75, 23);
+            this.rankUpButton.Size = new System.Drawing.Size(112, 35);
             this.rankUpButton.TabIndex = 2;
             this.rankUpButton.Text = "rank up";
             this.rankUpButton.UseVisualStyleBackColor = true;
@@ -447,18 +487,20 @@
             // 
             // levelStatus
             // 
-            this.levelStatus.Location = new System.Drawing.Point(4, 4);
+            this.levelStatus.Location = new System.Drawing.Point(6, 6);
+            this.levelStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.levelStatus.Name = "levelStatus";
             this.levelStatus.ReadOnly = true;
-            this.levelStatus.Size = new System.Drawing.Size(774, 124);
+            this.levelStatus.Size = new System.Drawing.Size(1159, 189);
             this.levelStatus.TabIndex = 1;
             this.levelStatus.Text = "status...";
             // 
             // levelPartyButton
             // 
-            this.levelPartyButton.Location = new System.Drawing.Point(238, 155);
+            this.levelPartyButton.Location = new System.Drawing.Point(357, 238);
+            this.levelPartyButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.levelPartyButton.Name = "levelPartyButton";
-            this.levelPartyButton.Size = new System.Drawing.Size(75, 23);
+            this.levelPartyButton.Size = new System.Drawing.Size(112, 35);
             this.levelPartyButton.TabIndex = 0;
             this.levelPartyButton.Text = "level party";
             this.levelPartyButton.UseVisualStyleBackColor = true;
@@ -469,9 +511,10 @@
             this.sellTab.Controls.Add(this.sellItemSelect);
             this.sellTab.Controls.Add(this.label6);
             this.sellTab.Controls.Add(this.sellButton);
-            this.sellTab.Location = new System.Drawing.Point(4, 22);
+            this.sellTab.Location = new System.Drawing.Point(4, 29);
+            this.sellTab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sellTab.Name = "sellTab";
-            this.sellTab.Size = new System.Drawing.Size(781, 205);
+            this.sellTab.Size = new System.Drawing.Size(1176, 322);
             this.sellTab.TabIndex = 5;
             this.sellTab.Text = "Sell";
             this.sellTab.UseVisualStyleBackColor = true;
@@ -479,25 +522,28 @@
             // sellItemSelect
             // 
             this.sellItemSelect.FormattingEnabled = true;
-            this.sellItemSelect.Location = new System.Drawing.Point(53, 12);
+            this.sellItemSelect.Location = new System.Drawing.Point(80, 18);
+            this.sellItemSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sellItemSelect.Name = "sellItemSelect";
-            this.sellItemSelect.Size = new System.Drawing.Size(317, 21);
+            this.sellItemSelect.Size = new System.Drawing.Size(474, 28);
             this.sellItemSelect.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 15);
+            this.label6.Location = new System.Drawing.Point(26, 23);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 13);
+            this.label6.Size = new System.Drawing.Size(41, 20);
             this.label6.TabIndex = 7;
             this.label6.Text = "Item";
             // 
             // sellButton
             // 
-            this.sellButton.Location = new System.Drawing.Point(699, 178);
+            this.sellButton.Location = new System.Drawing.Point(1048, 274);
+            this.sellButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sellButton.Name = "sellButton";
-            this.sellButton.Size = new System.Drawing.Size(75, 23);
+            this.sellButton.Size = new System.Drawing.Size(112, 35);
             this.sellButton.TabIndex = 6;
             this.sellButton.Text = "login";
             this.sellButton.UseVisualStyleBackColor = true;
@@ -509,9 +555,10 @@
             this.jpSummonTab.Controls.Add(this.JPLogin);
             this.jpSummonTab.Controls.Add(this.GachaSummon);
             this.jpSummonTab.Controls.Add(this.JPGacha);
-            this.jpSummonTab.Location = new System.Drawing.Point(4, 22);
+            this.jpSummonTab.Location = new System.Drawing.Point(4, 29);
+            this.jpSummonTab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.jpSummonTab.Name = "jpSummonTab";
-            this.jpSummonTab.Size = new System.Drawing.Size(781, 205);
+            this.jpSummonTab.Size = new System.Drawing.Size(1176, 322);
             this.jpSummonTab.TabIndex = 3;
             this.jpSummonTab.Text = "JP Summon";
             this.jpSummonTab.UseVisualStyleBackColor = true;
@@ -519,16 +566,18 @@
             // JPGachaTicket
             // 
             this.JPGachaTicket.FormattingEnabled = true;
-            this.JPGachaTicket.Location = new System.Drawing.Point(389, 35);
+            this.JPGachaTicket.Location = new System.Drawing.Point(584, 54);
+            this.JPGachaTicket.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.JPGachaTicket.Name = "JPGachaTicket";
-            this.JPGachaTicket.Size = new System.Drawing.Size(88, 21);
+            this.JPGachaTicket.Size = new System.Drawing.Size(130, 28);
             this.JPGachaTicket.TabIndex = 5;
             // 
             // JPLogin
             // 
-            this.JPLogin.Location = new System.Drawing.Point(703, 179);
+            this.JPLogin.Location = new System.Drawing.Point(1054, 275);
+            this.JPLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.JPLogin.Name = "JPLogin";
-            this.JPLogin.Size = new System.Drawing.Size(75, 23);
+            this.JPLogin.Size = new System.Drawing.Size(112, 35);
             this.JPLogin.TabIndex = 4;
             this.JPLogin.Text = "Login";
             this.JPLogin.UseVisualStyleBackColor = true;
@@ -537,9 +586,10 @@
             // GachaSummon
             // 
             this.GachaSummon.Enabled = false;
-            this.GachaSummon.Location = new System.Drawing.Point(703, 35);
+            this.GachaSummon.Location = new System.Drawing.Point(1054, 54);
+            this.GachaSummon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GachaSummon.Name = "GachaSummon";
-            this.GachaSummon.Size = new System.Drawing.Size(75, 23);
+            this.GachaSummon.Size = new System.Drawing.Size(112, 35);
             this.GachaSummon.TabIndex = 1;
             this.GachaSummon.Text = "Summon";
             this.GachaSummon.UseVisualStyleBackColor = true;
@@ -548,16 +598,18 @@
             // JPGacha
             // 
             this.JPGacha.FormattingEnabled = true;
-            this.JPGacha.Location = new System.Drawing.Point(3, 35);
+            this.JPGacha.Location = new System.Drawing.Point(4, 54);
+            this.JPGacha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.JPGacha.Name = "JPGacha";
-            this.JPGacha.Size = new System.Drawing.Size(380, 21);
+            this.JPGacha.Size = new System.Drawing.Size(568, 28);
             this.JPGacha.TabIndex = 0;
             // 
             // donateButton
             // 
-            this.donateButton.Location = new System.Drawing.Point(689, 248);
+            this.donateButton.Location = new System.Drawing.Point(1034, 382);
+            this.donateButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.donateButton.Name = "donateButton";
-            this.donateButton.Size = new System.Drawing.Size(106, 23);
+            this.donateButton.Size = new System.Drawing.Size(159, 35);
             this.donateButton.TabIndex = 3;
             this.donateButton.Text = "Donate";
             this.donateButton.UseVisualStyleBackColor = true;
@@ -565,19 +617,21 @@
             // 
             // consoleLog
             // 
-            this.consoleLog.Location = new System.Drawing.Point(13, 341);
+            this.consoleLog.Location = new System.Drawing.Point(20, 525);
+            this.consoleLog.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.consoleLog.Name = "consoleLog";
             this.consoleLog.ReadOnly = true;
-            this.consoleLog.Size = new System.Drawing.Size(785, 212);
+            this.consoleLog.Size = new System.Drawing.Size(1176, 324);
             this.consoleLog.TabIndex = 3;
             this.consoleLog.Text = "";
             // 
             // ProxyPort
             // 
             this.ProxyPort.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Client.Properties.Settings.Default, "ProxyPort", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.ProxyPort.Location = new System.Drawing.Point(194, 308);
+            this.ProxyPort.Location = new System.Drawing.Point(291, 474);
+            this.ProxyPort.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ProxyPort.Name = "ProxyPort";
-            this.ProxyPort.Size = new System.Drawing.Size(203, 20);
+            this.ProxyPort.Size = new System.Drawing.Size(302, 26);
             this.ProxyPort.TabIndex = 6;
             this.ProxyPort.Text = global::Client.Properties.Settings.Default.ProxyPort;
             this.ProxyPort.TextChanged += new System.EventHandler(this.ProxyPort_TextChanged);
@@ -585,9 +639,10 @@
             // ProxyIP
             // 
             this.ProxyIP.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Client.Properties.Settings.Default, "ProxyIP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.ProxyIP.Location = new System.Drawing.Point(13, 308);
+            this.ProxyIP.Location = new System.Drawing.Point(20, 474);
+            this.ProxyIP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ProxyIP.Name = "ProxyIP";
-            this.ProxyIP.Size = new System.Drawing.Size(178, 20);
+            this.ProxyIP.Size = new System.Drawing.Size(265, 26);
             this.ProxyIP.TabIndex = 5;
             this.ProxyIP.Text = global::Client.Properties.Settings.Default.ProxyIP;
             this.ProxyIP.TextChanged += new System.EventHandler(this.ProxyIP_TextChanged);
@@ -595,9 +650,10 @@
             // fbtokenInput
             // 
             this.fbtokenInput.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Client.Properties.Settings.Default, "fbtokenInput", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.fbtokenInput.Location = new System.Drawing.Point(194, 269);
+            this.fbtokenInput.Location = new System.Drawing.Point(291, 414);
+            this.fbtokenInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fbtokenInput.Name = "fbtokenInput";
-            this.fbtokenInput.Size = new System.Drawing.Size(203, 20);
+            this.fbtokenInput.Size = new System.Drawing.Size(302, 26);
             this.fbtokenInput.TabIndex = 1;
             this.fbtokenInput.Text = global::Client.Properties.Settings.Default.fbtokenInput;
             this.fbtokenInput.TextChanged += new System.EventHandler(this.fbtokenInput_TextChanged);
@@ -605,9 +661,10 @@
             // fbidInput
             // 
             this.fbidInput.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Client.Properties.Settings.Default, "fbidInput", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.fbidInput.Location = new System.Drawing.Point(13, 269);
+            this.fbidInput.Location = new System.Drawing.Point(20, 414);
+            this.fbidInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fbidInput.Name = "fbidInput";
-            this.fbidInput.Size = new System.Drawing.Size(178, 20);
+            this.fbidInput.Size = new System.Drawing.Size(265, 26);
             this.fbidInput.TabIndex = 0;
             this.fbidInput.Text = global::Client.Properties.Settings.Default.fbidInput;
             this.fbidInput.TextChanged += new System.EventHandler(this.FbidInput_TextChanged);
@@ -615,54 +672,130 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 253);
+            this.label1.Location = new System.Drawing.Point(21, 389);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 13);
+            this.label1.Size = new System.Drawing.Size(217, 20);
             this.label1.TabIndex = 7;
             this.label1.Text = "FB ID/Email or Transfer Code";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(194, 253);
+            this.label2.Location = new System.Drawing.Point(291, 389);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 13);
+            this.label2.Size = new System.Drawing.Size(258, 20);
             this.label2.TabIndex = 8;
             this.label2.Text = "FB Token/Password or Transfer Pin";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 292);
+            this.label3.Location = new System.Drawing.Point(21, 449);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.Size = new System.Drawing.Size(70, 20);
             this.label3.TabIndex = 9;
             this.label3.Text = "Proxy IP:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(194, 292);
+            this.label4.Location = new System.Drawing.Point(291, 449);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(84, 20);
             this.label4.TabIndex = 10;
             this.label4.Text = "Proxy Port:";
             // 
             // gitHubLink
             // 
-            this.gitHubLink.Location = new System.Drawing.Point(594, 247);
+            this.gitHubLink.Location = new System.Drawing.Point(891, 380);
+            this.gitHubLink.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gitHubLink.Name = "gitHubLink";
-            this.gitHubLink.Size = new System.Drawing.Size(75, 23);
+            this.gitHubLink.Size = new System.Drawing.Size(112, 35);
             this.gitHubLink.TabIndex = 11;
             this.gitHubLink.Text = "GitHub";
             this.gitHubLink.UseVisualStyleBackColor = true;
             this.gitHubLink.Click += new System.EventHandler(this.GitHubButton_Click);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.fuseUnitsButton);
+            this.tabPage1.Controls.Add(this.sellUnitsButton);
+            this.tabPage1.Controls.Add(this.checkBox1);
+            this.tabPage1.Controls.Add(this.checkBox2);
+            this.tabPage1.Controls.Add(this.checkBox3);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1176, 322);
+            this.tabPage1.TabIndex = 6;
+            this.tabPage1.Text = "Sell/Fuse Units";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(18, 58);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 24);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.Text = "Sell 4*";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Visible = false;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(18, 93);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(80, 24);
+            this.checkBox2.TabIndex = 9;
+            this.checkBox2.Text = "Sell 5*";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.Visible = false;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(18, 22);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(80, 24);
+            this.checkBox3.TabIndex = 8;
+            this.checkBox3.Text = "Sell 3*";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.Visible = false;
+            // 
+            // sellUnitsButton
+            // 
+            this.sellUnitsButton.Location = new System.Drawing.Point(1041, 211);
+            this.sellUnitsButton.Name = "sellUnitsButton";
+            this.sellUnitsButton.Size = new System.Drawing.Size(112, 36);
+            this.sellUnitsButton.TabIndex = 11;
+            this.sellUnitsButton.Text = "Sell Units";
+            this.sellUnitsButton.UseVisualStyleBackColor = true;
+            this.sellUnitsButton.Click += new System.EventHandler(this.sellUnitsButton_Click);
+            // 
+            // fuseUnitsButton
+            // 
+            this.fuseUnitsButton.Location = new System.Drawing.Point(1041, 265);
+            this.fuseUnitsButton.Name = "fuseUnitsButton";
+            this.fuseUnitsButton.Size = new System.Drawing.Size(112, 36);
+            this.fuseUnitsButton.TabIndex = 12;
+            this.fuseUnitsButton.Text = "Fuse Units";
+            this.fuseUnitsButton.UseVisualStyleBackColor = true;
+            this.fuseUnitsButton.Click += new System.EventHandler(this.fuseUnitsButton_Click);
+            // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(814, 565);
+            this.ClientSize = new System.Drawing.Size(1221, 869);
             this.Controls.Add(this.gitHubLink);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -675,6 +808,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.fbtokenInput);
             this.Controls.Add(this.fbidInput);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainWindow";
             this.Text = "Shalzuth\'s Brave Haxvius";
             this.tabControl1.ResumeLayout(false);
@@ -689,6 +823,8 @@
             this.sellTab.ResumeLayout(false);
             this.sellTab.PerformLayout();
             this.jpSummonTab.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -750,6 +886,12 @@
         private System.Windows.Forms.Button sellButton;
         private System.Windows.Forms.ComboBox sellItemSelect;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button fuseUnitsButton;
+        private System.Windows.Forms.Button sellUnitsButton;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
     }
 }
 

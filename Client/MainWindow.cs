@@ -348,5 +348,30 @@ namespace Client
             t.IsBackground = true;
             t.Start();
         }
+
+        private void sellUnitsButton_Click(object sender, EventArgs e)
+        {
+            var t = new Thread(() =>
+            {
+                Func<int, int> iteration = i =>
+                {
+                    sellUnitsButton.Text = (i + 1).ToString() + "...";
+                    return 1;
+                };
+                sellUnitsButton.Enabled = false;
+                sellUnitsButton.Text = "Selling";
+                client.Login();
+                client.SellUnits();
+                sellUnitsButton.Text = "Sell Units";
+                sellUnitsButton.Enabled = true;
+            });
+            t.IsBackground = true;
+            t.Start();
+        }
+
+        private void fuseUnitsButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
